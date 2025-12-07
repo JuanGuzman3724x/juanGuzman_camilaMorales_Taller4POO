@@ -26,6 +26,10 @@ public class Usuario {
 	public String getInfo() {
 		return info;
 	}
+	@Override
+	public String toString() {
+		return"[" + nombre +","+  password + ","+ rol + ","+ info+ "]";
+	}
 	
 
 }

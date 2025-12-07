@@ -35,6 +35,9 @@ public class Estudiantes {
 	public String getContrasena() {
 		return contrasena;
 	}
-	
+	@Override
+	public String toString() {
+		return"["+rut +"," + nombre +","+  carrera + ","+ semestre + ","+ email+","+contrasena + "]";
 
 }
+	}

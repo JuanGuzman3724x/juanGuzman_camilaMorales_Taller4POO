@@ -34,6 +34,10 @@ public class Cursos {
 	public String getRequisito() {
 		return requisito;
 	}
+	@Override
+	public String toString() {
+		return"["+ nrc+"," + nombre +","+  semestre + ","+ creditos + ","+ area+ "]";
+		}
 	
 
 }
