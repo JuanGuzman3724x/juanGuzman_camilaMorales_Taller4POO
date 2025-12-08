@@ -1,17 +1,15 @@
 package dominio;
 
 public class Usuario {
-	private String nombre;
-	private String password;
-	private String rol;
-	private String info;
+	protected String nombre;
+	protected String password;
+	protected String rol;
 	
-	public Usuario(String nombre, String password, String rol, String info) {
+	public Usuario(String nombre, String password, String rol) {
 		super();
 		this.nombre = nombre;
 		this.password = password;
 		this.rol = rol;
-		this.info = info;
 	}
 	
 	public String getNombre() {
@@ -23,12 +21,21 @@ public class Usuario {
 	public String getRol() {
 		return rol;
 	}
-	public String getInfo() {
-		return info;
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public void setRol(String rol) {
+		this.rol = rol;
+	}
+
 	@Override
 	public String toString() {
-		return"[" + nombre +","+  password + ","+ rol + ","+ info+ "]";
+		return"[" + nombre +","+  password + ","+ rol + ",";
 	}
 	
 
