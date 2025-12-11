@@ -22,7 +22,7 @@ public class GuiAdmin {
 		ventanaPrincipal.setLocationRelativeTo(null);
 		ventanaPrincipal.add(panel);
 		ventanaPrincipal.setVisible(true);
-	
+	 
 	}
 
 }

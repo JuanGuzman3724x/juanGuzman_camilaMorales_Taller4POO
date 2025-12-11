@@ -18,6 +18,7 @@ public class Estudiantes {
 		this.contrasena = contrasena;
 	}
 	public String getRut() {
+		
 		return rut;
 	}
 	public String getNombre() {

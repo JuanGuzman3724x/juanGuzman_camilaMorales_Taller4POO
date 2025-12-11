@@ -92,6 +92,7 @@ public class MenuAdmin {
 			return false;
 		}
 		estudiante.remove(es);
+		
 		return true;
 	}
 	public ArrayList<Usuario> getU() {
