@@ -7,12 +7,7 @@ import dominio.Usuario;
 import gui.Gui;
 
 public class App {
-	public static void main(String[] args) {
-		Gui menu = new Gui();
-		menu.iniciar();
-	}
-	//lectura
-	public void lectura() throws FileNotFoundException {
+	public static void lectura() throws FileNotFoundException {
 		File file = new File("usuarios.txt");
 		Scanner lector = new Scanner(file);
 		while(lector.hasNextLine()) {
@@ -23,5 +18,23 @@ public class App {
 			}
 			Usuario us = Factory.crearU(partes[0], partes[1], partes[2], info);
 		}
+		
 	}
+	public static void lectorCertifi() throws FileNotFoundException {
+		Scanner certi = new Scanner(new File("certificaciones.txt"));
+		while (certi.hasNextLine()) {
+			String[] partes= certi.nextLine().split(";");
+			
+			
+		}
+		
+		
+	}
+	public static void main(String[] args) throws FileNotFoundException {
+		lectura();
+		Gui menu = new Gui();
+		menu.iniciar();
+	}
+	//lectura
+	
 }
