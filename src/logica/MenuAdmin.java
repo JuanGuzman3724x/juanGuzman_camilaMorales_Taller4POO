@@ -1,7 +1,11 @@
 package logica;
 
 import java.util.ArrayList;
-
+/**Juan Guzman, 21679842-2,ITI
+ * Camila Morales 21539145-0, ICCI
+ * 
+ * 
+ */
 import dominio.Coordinador;
 import dominio.Estudiantes;
 import dominio.Usuario;
