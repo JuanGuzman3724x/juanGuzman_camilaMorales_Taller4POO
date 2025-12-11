@@ -1,4 +1,9 @@
 package logica;
+/**Juan Guzman, 21679842-2,ITI
+ * Camila Morales 21539145-0, ICCI
+ * 
+ * 
+ */
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;

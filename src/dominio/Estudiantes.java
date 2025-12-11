@@ -1,5 +1,6 @@
 package dominio;
 
+
 public class Estudiantes {
 	private String rut;
 	private String nombre;

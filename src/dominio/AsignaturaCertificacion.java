@@ -1,5 +1,9 @@
 package dominio;
-
+/**Juan Guzman, 21679842-2,ITI
+ * Camila Morales 21539145-0, ICCI
+ * 
+ * 
+ */
 public class AsignaturaCertificacion {
 	private String id;
 	private String nrc;

@@ -1,5 +1,9 @@
 package gui;
-
+/**Juan Guzman, 21679842-2,ITI
+ * Camila Morales 21539145-0, ICCI
+ * 
+ * 
+ */
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.GridBagLayout;
@@ -21,15 +25,16 @@ public class Gui {
 		ventanaPrincipal.setSize(800,600);
 		ventanaPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		ventanaPrincipal.setLocationRelativeTo(null);
-		ventanaPrincipal.add(panel);
+		ventanaPrincipal.add(tabs);
 		ventanaPrincipal.setVisible(true);
 	
 	}
-	public void menuAdministrador() {
+	public void menuAdministrador(JTabbedPane tabs) {
+		
 		
 	}
 	
-	public void menuUsuario() {
+	public void menuUsuario(JTabbedPane tabs) {
 		JFrame ventanaUsuarioFrame = new JFrame("Usuario")
 				
 ;		
