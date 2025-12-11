@@ -40,4 +40,22 @@ public class Estudiantes {
 		return"["+rut +"," + nombre +","+  carrera + ","+ semestre + ","+ email+","+contrasena + "]";
 
 }
+	public void setRut(String rut) {
+		this.rut = rut;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public void setCarrera(String carrera) {
+		this.carrera = carrera;
+	}
+	public void setSemestre(String semestre) {
+		this.semestre = semestre;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public void setContrasena(String contrasena) {
+		this.contrasena = contrasena;
+	}
 	}
