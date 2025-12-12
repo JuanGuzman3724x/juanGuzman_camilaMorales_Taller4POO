@@ -11,7 +11,7 @@ import dominio.Estudiantes;
 import dominio.Usuario;
 
 public class MenuAdmin {
-	private ArrayList<Usuario> u = new ArrayList<>();
+	private static ArrayList<Usuario> u = new ArrayList<>();
 	private ArrayList<Estudiantes> estudiante = new ArrayList<>();
 
 	public boolean guardar(String nombre, String password, String info) {
@@ -99,7 +99,7 @@ public class MenuAdmin {
 		
 		return true;
 	}
-	public ArrayList<Usuario> getU() {
+	public static ArrayList<Usuario> getU() {
 		return u;
 	}
 

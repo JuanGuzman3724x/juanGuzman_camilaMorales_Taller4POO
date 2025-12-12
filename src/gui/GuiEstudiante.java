@@ -1,10 +1,16 @@
 package gui;
 
 import java.awt.BorderLayout;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
 
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
+import javax.swing.border.EmptyBorder;
 
 public class GuiEstudiante {
     private JTabbedPane tabs = new JTabbedPane();
@@ -27,14 +33,13 @@ public class GuiEstudiante {
         // Barra superior
         JPanel top = new JPanel(new BorderLayout());
         JLabel lbl = new JLabel("Portal Estudiante (GUI base)");
-        lbl.setFont(new Font("Segoe UI", Font.BOLD, 16));
         top.add(lbl, BorderLayout.WEST);
 
         main.setBorder(new EmptyBorder(10, 10, 10, 10));
         main.add(top, BorderLayout.NORTH);
         main.add(tabs, BorderLayout.CENTER);
 
-        add(main);
+        ventanaEstudiante.add(main);
     }
 
     // --------------------------
@@ -44,19 +49,6 @@ public class GuiEstudiante {
         JPanel p = new JPanel(new BorderLayout(8, 8));
         p.setBorder(new EmptyBorder(8, 8, 8, 8));
 
-        JTextArea info = new JTextArea();
-        info.setEditable(false);
-        info.setFont(new Font("Segoe UI", Font.PLAIN, 14));
-        info.setText(
-                "Nombre: Estudiante Demo\n" +
-                "RUT: 12345678-9\n" +
-                "Carrera: Ingeniería en TI\n" +
-                "Semestre: 5\n\n" +
-                "Promedio general: --\n" +
-                "Promedio por semestre: --\n"
-        );
-
-        p.add(new JScrollPane(info), BorderLayout.CENTER);
         return p;
     }
 
@@ -68,10 +60,9 @@ public class GuiEstudiante {
         p.setBorder(new EmptyBorder(8, 8, 8, 8));
 
         JLabel title = new JLabel("Malla Curricular (interactiva) - Base");
-        title.setFont(new Font("Segoe UI", Font.BOLD, 14));
         p.add(title, BorderLayout.NORTH);
 
-        JPanel grid = new JPanel(new GridLayout(4, 1, 8, 8)); // 4 semestres demo
+        JPanel grid = new JPanel(new GridLayout(4, 1, 8, 8));
 
         for (int sem = 1; sem <= 4; sem++) {
             JPanel semestrePanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 8, 8));
