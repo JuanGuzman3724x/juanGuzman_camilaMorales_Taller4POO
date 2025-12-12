@@ -10,11 +10,15 @@ import dominio.Estudiantes;
 import dominio.Notas;
 
 public class menuCoor {
-	  private ArrayList<Certificacion> certificaciones;
-	  private ArrayList<AsignaturaCertificacion> asignaturas;
-	  private ArrayList<Cursos> cursos;
-	  private ArrayList<Estudiantes> estudiantes;
-	  private ArrayList<Notas> nota;
+	 private static menuCoor instance;
+
+	    public static menuCoor getInstance() {
+	        if (instance == null) instance = new menuCoor();
+	        return instance;
+	    }
+	    private ArrayList<Certificacion> certificaciones = new ArrayList<>();
+	    private menuCoor() {}
+
 
 	public boolean modificarLinea(String id, String nombre, String descripcion, int requisito, int validez) {
 		for(Certificacion c:  certificaciones) {

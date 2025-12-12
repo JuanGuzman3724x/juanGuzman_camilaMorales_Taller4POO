@@ -16,8 +16,7 @@ public class MenuAdmin {
         if (instance == null) instance = new MenuAdmin();
         return instance;
     }
-    private Controlador c = Controlador.getInstance();
-    		
+    private Controlador c = Controlador.getInstance();		
 
 	public boolean guardar(String nombre, String password, String info) {
 		return c.agregarCoordinador(nombre, password, info);
