@@ -9,11 +9,11 @@ public class Estudiantes {
 	private String rut;
 	private String nombre;
 	private String carrera;
-	private String semestre;
+	private int semestre;
 	private String email;
 	private String contrasena;
 	
-	public Estudiantes(String rut, String nombre, String carrera, String semestre, String email, String contrasena) {
+	public Estudiantes(String rut, String nombre, String carrera, int semestre, String email, String contrasena) {
 		super();
 		this.rut = rut;
 		this.nombre = nombre;
@@ -32,7 +32,7 @@ public class Estudiantes {
 	public String getCarrera() {
 		return carrera;
 	}
-	public String getSemestre() {
+	public int getSemestre() {
 		return semestre;
 	}
 	public String getEmail() {
@@ -55,7 +55,7 @@ public class Estudiantes {
 	public void setCarrera(String carrera) {
 		this.carrera = carrera;
 	}
-	public void setSemestre(String semestre) {
+	public void setSemestre(int semestre) {
 		this.semestre = semestre;
 	}
 	public void setEmail(String email) {
