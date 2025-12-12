@@ -10,5 +10,7 @@ requisitos académico
 integrantes
 Juan Guzman 21679842-2 ITI
 Camila Morales 21539145-9 ICCI
-gui: Gui.java,GuiEstudiante.java,Gui
+gui: Gui.java,GuiEstudiante.java,GuiCoorAdmin,GuiCoordinador,GuiAdmin,GuiEstAdmin
+logica:app,
+
  
