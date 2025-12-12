@@ -1,4 +1,7 @@
 package dominio;
+
+import java.util.ArrayList;
+
 /**Juan Guzman, 21679842-2,ITI
  * Camila Morales 21539145-0, ICCI
  * 
@@ -12,7 +15,8 @@ public class Estudiantes {
 	private int semestre;
 	private String email;
 	private String contrasena;
-	
+    private ArrayList<Notas> notas = new ArrayList<>();
+
 	public Estudiantes(String rut, String nombre, String carrera, int semestre, String email, String contrasena) {
 		super();
 		this.rut = rut;
@@ -64,4 +68,7 @@ public class Estudiantes {
 	public void setContrasena(String contrasena) {
 		this.contrasena = contrasena;
 	}
+	public void agregarNota(Notas n) {
+        notas.add(n);
+    }
 	}
