@@ -71,4 +71,11 @@ public class Estudiantes {
 	public void agregarNota(Notas n) {
         notas.add(n);
     }
+	public ArrayList<Notas> getNotas() {
+		return notas;
+	}
+	public void setNotas(ArrayList<Notas> notas) {
+		this.notas = notas;
+	}
+	
 	}
