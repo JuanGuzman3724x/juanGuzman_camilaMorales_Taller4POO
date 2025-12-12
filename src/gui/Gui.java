@@ -1,4 +1,9 @@
 package gui;
+/**Juan Guzman, 21679842-2,ITI
+ * Camila Morales 21539145-0, ICCI
+ * 
+ * 
+ */
 
 import java.awt.BorderLayout;
 import java.awt.GridBagConstraints;
@@ -12,12 +17,16 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 import dominio.Usuario;
-import logica.MenuAdmin;
-
+import logica.Controlador;
+/**
+ * gui basico
+ */
 public class Gui {
-	ArrayList<Usuario> usuario =MenuAdmin.getU();
+	ArrayList<Usuario> usuario =Controlador.getUsuarios();
 	
-	
+	/**
+	 * Clase que permite iniciar el gui
+	 */
 	public void iniciar() {
 	    JFrame ventanaPrincipal = new JFrame("Ventana");
 	    JTextField login = new JTextField(15);
@@ -71,6 +80,13 @@ public class Gui {
 	    });
 	    
 	}
+	/**
+	 * -Clase verificar
+	 * -permite verificar si el usuario y contraseña coinciden con las guardadas
+	 * @param user
+	 * @param pass
+	 * @return
+	 */
 	public Usuario verificar(String user, String pass) {
 
         if (user == null || pass == null) return null;

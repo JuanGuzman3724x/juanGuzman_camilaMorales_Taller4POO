@@ -1,4 +1,9 @@
 package logica;
+/**Juan Guzman, 21679842-2,ITI
+ * Camila Morales 21539145-0, ICCI
+ * 
+ * 
+ */
 
 import java.security.cert.Certificate;
 import java.util.ArrayList;
@@ -18,8 +23,6 @@ public class menuCoor {
 	    }
 	    private ArrayList<Certificacion> certificaciones = new ArrayList<>();
 	    private menuCoor() {}
-
-
 	public boolean modificarLinea(String id, String nombre, String descripcion, int requisito, int validez) {
 		for(Certificacion c:  certificaciones) {
 			if(c.getId().equalsIgnoreCase(id)) {

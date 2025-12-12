@@ -13,10 +13,10 @@ public class Controlador {
         return instance;
     }
     private Controlador() {}
-    private ArrayList<Usuario> usuarios = new ArrayList<>();
+    private static ArrayList<Usuario> usuarios = new ArrayList<>();
     private ArrayList<Estudiantes> estudiantes = new ArrayList<>();
 
-    public ArrayList<Usuario> getUsuarios() { 
+    public static ArrayList<Usuario> getUsuarios() { 
 		return usuarios;
 	}
 	public ArrayList<Estudiantes> getEstudiantes() {
