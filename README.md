@@ -1,7 +1,6 @@
 # TallerPOO4 
 
 Este proyecto implementa un sistema académico completo diseñado para digitalizar, automatizar y optimizar la gestión de certificaciones profesionales en un entorno universitario.  
-
 ## Objetivos del sistema
 El software proporciona:
 
@@ -30,9 +29,9 @@ Generación automática de certificados oficiales una vez cumplidos los requisit
 
 ---
 
-## 📁 Estructura del Proyecto
+##  Estructura del Proyecto
 
-### 🖥 GUI (`/gui`)
+### GUI (`/gui`)
 - `Gui.java`  
 - `GuiEstudiante.java`  
 - `GuiCoorAdmin.java`  
@@ -50,7 +49,7 @@ Generación automática de certificados oficiales una vez cumplidos los requisit
 - `PromedioGeneral.java`  
 - `MenuCoor.java`  
 
-### 📦 Dominio (`/dominio`)
+### Dominio (`/dominio`)
 - `Admin.java`  
 - `AsignaturaCertificacion.java`  
 - `Certificacion.java`  
