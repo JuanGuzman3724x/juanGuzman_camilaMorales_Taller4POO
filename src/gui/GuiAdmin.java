@@ -18,16 +18,21 @@ public class GuiAdmin extends JFrame {
 		super("Administrador");
 		setSize(600,400);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setLayout(new GridLayout(1, 2));
+		setLayout(new GridLayout(3,1));
 		JButton botonCoor = new JButton("coor");
 		JButton botonEs = new JButton("coor");
 		JButton botonSal = new JButton("coor");
-		JPanel botonera = new JPanel(new GridLayout(1,1,5,5));
-		JButton agregar =	new JButton("agregar");
 
 		botonCoor.addActionListener(e ->{
 			
 		});
+		botonEs.addActionListener(e ->{
+			
+		});
+		add(botonCoor);
+		add(botonEs);
+		add(botonSal);
+
 	}
 
 }
